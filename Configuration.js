@@ -24,53 +24,23 @@ function getEndpoints(deviceAddress, endpoints)
   // temperatura, mientras que el segundo es un sensor de dióxido de carbono.
 
   // endpoints.addEndpoint("1", "Temperature sensor", endpointType.temperatureSensor);
-  var e = endpoints.addEndpoint("TK8001", "Produccion de Crema TK 8001", endpointType.genericSensor);
+  var e = endpoints.addEndpoint("ProdFerm", "Produccion de Fermentacion", endpointType.genericSensor);
   e.accessType = endpointAccessType.readWrite;
   e.variableTypeId = 1009;
 
-  var e = endpoints.addEndpoint("TK8002", "Produccion de Crema TK 8002", endpointType.genericSensor);
+  var e = endpoints.addEndpoint("ProdLSI", "Produccion de LSI", endpointType.genericSensor);
   e.accessType = endpointAccessType.readWrite;
   e.variableTypeId = 1009;
 
-  var e = endpoints.addEndpoint("TK8003", "Produccion de Crema TK 8003", endpointType.genericSensor);
+  var e = endpoints.addEndpoint("ProdAlimen", "Produccion de Alimenticia", endpointType.genericSensor);
   e.accessType = endpointAccessType.readWrite;
   e.variableTypeId = 1009;
 
-  var e = endpoints.addEndpoint("TK8004", "Produccion de Crema TK 8004", endpointType.genericSensor);
+  var e = endpoints.addEndpoint("ProdExtrac", "Produccion de Crema TK 8004", endpointType.genericSensor);
   e.accessType = endpointAccessType.readWrite;
   e.variableTypeId = 1009;
 
-  var e = endpoints.addEndpoint("TK8005", "Produccion de Crema TK 8005", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK8006", "Produccion de Crema TK 8006", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK8007", "Produccion de Crema TK 8007", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK8008", "Produccion de Crema TK 8008", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK80011", "Produccion de Crema TK 80011", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK80012", "Produccion de Crema TK 80012", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK80013", "Produccion de Crema TK 80013", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
-
-  var e = endpoints.addEndpoint("TK80014", "Produccion de Crema TK 80014", endpointType.genericSensor);
-  e.accessType = endpointAccessType.readWrite;
-  e.variableTypeId = 1009;
+  
 }
 
 function validateDeviceAddress(address, result)
